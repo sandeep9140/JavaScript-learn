@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //filter()
+        //return only true element 
+        let nums=[10,15,20,25];
+        let even=nums.filter(num=>num%2==0);
+        console.log(even);
+
+
+        //reduce()
+        //combine all element into single unit
+
+        //forEach
+        //take one by one elemnt in this variable
+        let num2=[1,2,3,4];
+        num2.forEach(num=>{
+            console.log(num);
+        });
+
+
+        //includes()
+        //check value have or not
+        let arr3=[1,2,3,4];
+        console.log(arr3.includes(3));
+
+
+        //indexOf()
+        //return index of the elements
+        let arr4=["A","B","C"];
+        console.log(arr4.indexOf("B"));
+
+
+
+        //slice()
+        //give part of aarya but not modifie in arrya 
+        let arr5=[1,2,3,4];
+        let newarr=arr5.slice(1,4);
+        console.log(arr5);
+        console.log(newarr);
+
+
+        //splice()
+        //modify original   and delete
+        let arr7=[1,2,3,4];
+        let newarr1=arr7.splice(1,4);
+        console.log(arr7);
+        console.log(newarr1);
+
+
+       // delete
+        let arr8=[1,2,3,4];
+        let newarr2=arr8.splice(1,4,16);
+        console.log(arr8);
+        console.log(newarr2);
+
+        //concat()
+        //joint two String
+
+        let a=[1,2,3];
+        let b=[4,5,6];
+        console.log(a.concat(b));
+
+
+        //join()
+        //joint array in string with argument value
+        let ar1=["sandeep","vijay","annu"];
+        console.log(ar1.join("_"));
+        console.log(ar1.toString())
+
+
+    
+       
+
+
+    </script>
+</body>
+</html>

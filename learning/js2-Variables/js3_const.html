@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //const conatain fixed value 
+        // it can contain any type of value in const
+
+
+        //1 blcok scope not a function scope 
+        if(true){
+            const a="sandeep";
+            console.log(a);
+        }
+       // console.log(a);// Error: a is not defined
+
+
+        // 2 Reassign  No
+        const b=10;
+        console.log(b);  
+       // b=50;// we cant reassign its a constant 
+        console.log(b);
+
+
+
+        // 3 Redecalration   No
+        const c=60;
+        console.log(c);
+        //const c=40;// c is already declared
+        console.log(c);
+
+    </script>
+</body>
+</html>

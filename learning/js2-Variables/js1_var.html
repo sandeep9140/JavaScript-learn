@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var is take any type of value in var type variable 
+        var one="string";//
+        var two=10;
+        var three=10.55;
+        console.log(one);
+        console.log(two);
+        console.log(three);
+
+
+        // old ways  and function scope
+        if(true){
+            var x="var";
+            console.log("inside fucntion "+x);
+        }
+        console.log("outside function "+x);
+
+
+        // Reassign Yes
+        var a=10;
+        a=50;
+        console.log(a);
+
+        //Redeclaration  yes
+        var b=20;
+        console.log(b);
+         var b=50;
+        console.log(b);
+
+
+
+
+    </script>
+</body>
+</html>

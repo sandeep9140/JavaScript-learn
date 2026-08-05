@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let can store any type of value of js 
+        let a=10;
+        let b="string";
+        let c=2222.6;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+        //function scope
+        if(true){
+            let d="let variable access from";
+            console.log(d+" inside");
+        }
+            //console.log(d+" outside");//Error:  d is not define
+
+
+
+        //Reassign  value  yes
+        let e=20;
+        console.log(e);
+        e=60;
+        console.log(e);
+
+
+        
+        //Redeclaretion datatypes No
+        let f=20;
+        console.log(f);
+        //let  f=60;// Error : f is already been declared 
+        console.log(f);
+    </script>
+</body>
+</html>

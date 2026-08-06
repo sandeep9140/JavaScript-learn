@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object are contain multiple type of value itself store
+        let user={
+            name: "sandeep",
+            age: 12,
+            id : 1,
+            1 : 23
+        };
+
+        console.log(user);//it show all object 
+        console.log(user.name);//only name key value access (dot notation called)
+        console.log(user.age);
+        console.log(user["name"]);
+        console.log(user["age"]);
+        //console.log(user.1);//show error  1 : 23  
+        console.log(user["1"]) // 23
+    </script>
+</body>
+</html>

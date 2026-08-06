@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //without Destructuring process
+        const user={
+            name:"rahul",
+            age:22
+        };
+        const name=user.name;
+        const age=user.age;
+
+                //or
+        //const{name,age}=user;
+        console.log(name);
+        console.log(age);
+
+
+        //with destructuring process
+        const user1={
+            username : "sandeep",
+            password : 123
+        };
+        const{username,password}=user1;
+        console.log(username);
+        console.log(password);
+    </script>
+</body>
+</html>

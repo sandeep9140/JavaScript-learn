@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ==========html ================== -->
+    <textarea id="text" rows="6" cols="40" placeholder="Type something..."></textarea>
+
+    <p>Characters: <span id="count">0</span></p>
+
+    <h1 id="copy"></h1>
+
+
+    <!-- =================================== -->
+
+    <!-- =============java script=============== -->
+    <script>
+        const textarea = document.getElementById("text");
+        const count = document.getElementById("count");
+        const copyData=document.getElementById("copy");
+        textarea.addEventListener("input",()=>{
+            count.textContent=textarea.value.length;
+            //console.log(textarea.value)
+            document.getElementById("copy").innerHTML=textarea.value
+        });
+    </script>
+    <!-- ========================================== -->
+</body>
+
+</html>

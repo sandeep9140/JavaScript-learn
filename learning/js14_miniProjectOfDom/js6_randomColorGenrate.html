@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        
+        #box{
+            
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+            margin: 40px auto;
+            
+        }
+        button{
+            display: block;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- ==========html ================== -->
+    <div id="box"></div> <br><br>
+    <button id="btn">random color</button>
+    <!-- =================================== -->
+
+
+
+    <!-- background-color: rgb(red, green, blue); -->
+    <!-- =============java script=============== -->
+
+    <script>
+        const box=document.getElementById("box");
+        const btn=document.getElementById("btn");
+
+        btn.addEventListener("click",() => {
+            let red=parseInt(Math.random()*255);
+            let green=parseInt(Math.random()*255);
+            let blue=parseInt(Math.random()*255);
+    
+        
+            box.style.backgroundColor=`rgb(${red}, ${green}, ${blue})`;
+            
+
+        });
+    </script>
+
+    <!-- ========================================== -->
+</body>
+</html>

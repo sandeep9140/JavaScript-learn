@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f2f2f2;
+        }
+
+        .box {
+            width: 350px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 220px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+            background: #eee;
+            margin: 10px 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==========html ================== -->
+    <div class="box">
+
+        <h1>To Do List</h1>
+
+        <input id="input" type="text" placeholder="Enter task">
+        <button id="addBtn">Add</button>
+
+        <ul id="list"></ul>
+
+    </div>
+
+    <!-- =================================== -->
+
+    <!-- =============java script=============== -->
+    <script>
+
+        const input = document.getElementById("input");
+        const addBtn = document.getElementById("addBtn");
+        const list = document.getElementById("list");
+
+
+        addBtn.addEventListener("click", () => {
+
+            if (input.value === "") {
+                alert("Please enter task");
+                return;
+            }
+
+
+            let li = document.createElement("li");
+
+            li.innerHTML = `
+        <span>${input.value}</span>
+        <button class="delete">Delete</button>
+    `;
+
+
+            list.appendChild(li);
+
+
+            // Task complete
+            li.querySelector("span").addEventListener("click", () => {
+                li.querySelector("span").classList.toggle("done");
+            });
+
+
+            // Delete task
+            li.querySelector(".delete").addEventListener("click", () => {
+                li.remove();
+            });
+
+
+            input.value = "";
+
+        });
+
+    </script>
+    <!-- ========================================== -->
+</body>
+
+</html>

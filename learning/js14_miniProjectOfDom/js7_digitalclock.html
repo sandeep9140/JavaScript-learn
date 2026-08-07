@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            font-family: Arial;
+        }
+
+        #clock {
+            color: white;
+            background: #333;
+            padding: 20px 40px;
+            font-size: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==========html ================== -->
+    <div id="clock">00:00:00</div>
+    <!-- =================================== -->
+
+    <!-- =============java script=============== -->
+    <script>
+const clock = document.getElementById("clock");
+
+function showTime() {
+
+    let date = new Date();
+
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+
+    // 2 digit format
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+
+    clock.textContent = `${hours} : ${minutes} : ${seconds}`;
+}
+
+setInterval(showTime, 1000);
+
+showTime();
+    </script>
+    <!-- ========================================== -->
+</body>
+
+</html>

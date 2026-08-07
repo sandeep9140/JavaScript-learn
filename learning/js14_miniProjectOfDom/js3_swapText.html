@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ==========html ================== -->
+    <h1 id="head1">this is heading 1 text</h1>
+    <h2 id="head2">this is heading 2 text</h2>
+    <button id="bot">Swap</button>
+    <!-- =================================== -->
+
+    <!-- =============java script=============== -->
+     <script>
+        const text1=document.getElementById("head1").innerHTML;
+        //console.log(text1)
+        const text2=document.getElementById("head2").innerHTML;
+        const btn=document.getElementById("bot");
+
+        let swaped=false;
+
+        btn.addEventListener("click", ()=>{
+            if(!swaped){
+            document.getElementById("head2").innerHTML=text1;
+            document.getElementById("head1").innerHTML=text2;
+            }
+            else{
+            document.getElementById("head1").innerHTML=text1;
+            document.getElementById("head2").innerHTML=text2;
+            
+            }
+            swaped =!swaped;
+            
+        })
+     </script>
+
+    <!-- ========================================== -->
+</body>
+</html>

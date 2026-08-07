@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        Hello <b>sandeep </b><span style="display: none;">hihi</span>
+    </div>
+
+    <script>
+        const box=document.getElementById("box");
+        console.log(box.innerHTML);
+        //Hello <b>sandeep </b><span style="display: none;">hihi</span>
+
+        console.log(box.innerText);
+        //hello sandeep
+
+        console.log(box.textContent);
+        //hello sandeep hihi
+    </script>
+</body>
+</html>

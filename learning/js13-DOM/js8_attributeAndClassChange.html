@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1 id="text">Hello </h1>
+    <button onclick="add()">add</button>
+    <button onclick="remove()">remove</button>
+    <button onclick="toggle()">toggle</button>
+    <script>
+        function add(){
+            document.getElementById("text").classList.add("red");
+        }
+        function remove(){
+            document.getElementById("text").classList.remove("red");
+        }
+
+        function toggle(){
+            document.getElementById("text").classList.toggle("red");
+        }
+
+
+    </script>
+</body>
+</html>

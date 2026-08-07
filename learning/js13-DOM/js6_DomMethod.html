@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt" class="t1">hello 1</h1>
+    <h2 id="txt" class="t1">hello 2</h2>
+    <script>
+        let a=document.getElementById("txt");//<h1 id="txt">hello 1</h1>
+        console.log(a);
+
+        let b=document.getElementsByClassName("t1");
+        console.log(b[0]);
+
+        let c=document.getElementsByTagName("h1");
+        console.log(c)
+
+        let d=document.querySelector("h1");
+        console.log(d)
+
+
+        console.log(document.querySelector("#txt"));
+    </script>
+</body>
+</html>

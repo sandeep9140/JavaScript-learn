@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ?//click , dblclick ,mousedown , mouseup ,mouseout ,mouseover, etc. -->
+     <input type="text" id="name">
+
+
+
+     <script>
+        let userName=document.getElementById("name");
+        userName.addEventListener("input",(event)=>{
+            console.log(event.target.value);
+        });
+
+
+        let userFocus=document.getElementById("name");
+        userFocus.addEventListener("focus",(event)=>{
+            console.log(event.target.value);
+        });
+
+        let userBlur=document.getElementById("name");
+        userBlur.addEventListener("Blur",(event)=>{
+            console.log(event.target.value);
+        });
+        
+     </script>
+</body>
+</html>

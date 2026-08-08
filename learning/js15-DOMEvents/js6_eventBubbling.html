@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #middle{
+            
+            background-color:yellow;
+            height: 150px;
+            width: 150px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="middle">
+            <button id="inner">click</button>
+        </div>
+    </div>
+
+     <script>
+        let outer=document.getElementById("outer");
+        let middle=document.getElementById("middle");
+        let inner=document.getElementById("inner");
+
+
+        outer.addEventListener("click", ()=>{
+            console.log("outer");
+        });
+        
+        middle.addEventListener("click", ()=>{
+            console.log("middle");
+        });
+        
+        inner.addEventListener("click", ()=>{
+            console.log("inner");
+        });
+        
+        
+     </script>
+</body>
+</html>
